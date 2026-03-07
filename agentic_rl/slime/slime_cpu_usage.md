@@ -27,6 +27,6 @@
 
 ## 实际监控
 
-![截屏2026-03-07 12.35.10.png](CPU/%E6%88%AA%E5%B1%8F2026-03-07_12.35.10.png)
+![Screenshot](./cpu.png)
 
 - 从RSS可以看出ray::MegatronTrainRayActor.sleep的RSS = 118GB
