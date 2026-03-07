@@ -20,7 +20,7 @@ backward update FP16 weights
 ```
 
 - **Quantization Aware Training**
-    - 首先我们需要维护一份BF16的权重 $\mathcal{w}_{bf16}$，最后更新也是更新这个权重
+    - 首先我们需要维护一份BF16的权重 $$\mathcal{w}_{bf16}$$，最后更新也是更新这个权重
     - 然后我们进行quantization，即 $\text{round}(\mathcal{w}_{bf16}/s)$,将数值映射到INT 4的grid
     - 然后立刻进行de-quantization， $\mathcal{w}_q = \text{round}(\mathcal{w}_{bf16}/s)*s$, 恢复到了BF16
     - 在前向阶段使用 $w_q \times activation$
