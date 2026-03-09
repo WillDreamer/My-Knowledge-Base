@@ -9,6 +9,7 @@ My notes and reflections on LLMs, agents, and related topics.
 ### Quantization
 
 - [INT4 QAT RL Training](./agentic_rl/quantization/INT4_QAT_Training.md): Introduces the INT4 QAT RL end-to-end practice, including the technical details and the implementation of the INT4 QAT RL end-to-end practice.
+- [Activation-aware Weight Quantization](./agentic_rl/quantization/AWQ.md): Introduces AWQ, which reduces low-bit quantization error by identifying activation-important channels and applying channel-wise scaling before quantization.
 
 ### Slime
 
